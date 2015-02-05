@@ -25,15 +25,14 @@
 @list-details-hover-border-color: #E29FAF;
 @list-details-border-color: #e6e6e6;
 
-a.thumbnail {
+.thumbnail {
   border-radius:0;
   padding:0;
   height: 302px;
   border: solid 1px @list-details-border-color;
 }
 
-a.thumbnail:hover,
-a.thumbnail:focus {
+.thumbnail:hover {
   text-decoration: none;
   border: solid 1px @list-details-hover-border-color;
   .img-front-style-50 {
@@ -81,7 +80,7 @@ a.thumbnail:focus {
   width: 235px;
   padding: 0 20px;
   position: absolute;
-  left:11.5px;
+  left:11px;
   top:1px;
   text-decoration: none;
   color: #818181;
@@ -103,6 +102,14 @@ a.thumbnail:focus {
   margin-bottom: 10px;
   overflow: hidden;
 }
+.img-front-text-content li a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.img-front-text-content li a:hover {
+  color: @site-pagination-color;
+}
 
 .img-front-text .text-title {
   height: 128px;
@@ -121,6 +128,8 @@ a.thumbnail:focus {
   overflow: hidden;
 }
 
+@font-color-into-img: #818181;
+
 .img-front-style-50 {
   height: 50px;
   width: 200px;
@@ -132,7 +141,7 @@ a.thumbnail:focus {
   left:30px;
   top:230px;
   text-decoration: none;
-  color: #818181;
+  color: @font-color-into-img;
   overflow: hidden;
   background-color: #fff;
   z-index: 1;
@@ -150,7 +159,7 @@ a.thumbnail:focus {
   left:30px;
   top:180px;
   text-decoration: none;
-  color: #818181;
+  color: @font-color-into-img;
   overflow: hidden;
   background-color: #fff;
   z-index: 1;
@@ -183,3 +192,15 @@ a.thumbnail:focus {
   border-bottom: dotted 1px @site-pagination-color;
 }
 
+a.text-into-img {
+  color:@font-color-into-img;
+  text-decoration: none;
+}
+a.text-into-img:hover {
+  color: @site-pagination-color;
+}
+
+.bgw > .row {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
